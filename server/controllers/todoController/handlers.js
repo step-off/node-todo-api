@@ -46,4 +46,8 @@ const handleGetTodoById = (req, res) => {
     })
 };
 
-module.exports = {handleTodoPost, handleGetAllTodods, handleGetTodoById}
+const renderMainPage = (req, res) => {
+    res.render('index', {title: 'Todo App'})
+}
+
+module.exports = {handleTodoPost, handleGetAllTodods, handleGetTodoById, renderMainPage}
